@@ -1,0 +1,13 @@
+spring:
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_POST:6379}
+  cache:
+    type: redis
+    redis:
+      time-to-live: 60000
+
+app:
+  auth:
+    jwks-url: https://dev-s54top8q4uz3aiec.us.auth0.com/.well-known/jwks.json
